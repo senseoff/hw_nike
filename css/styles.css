@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 10px;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 390px;
+    width: 680px;
+    max-height: 390px;
+    max-width: 680px;
+    background-color: #111a28;
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.card__header {
+    margin-bottom: 10px;
+}
+
+.card__content {
+    display: flex;
+    height: 86%;
+}
+
+.card__gallery {
+    width: 60%;
+    position: relative;
+}
+
+.card__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -60%);
+    max-width: 90%;
+    max-height: 70%;
+}
+
+.card__previews {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+}
+
+.card__preview-btn {
+    display: inline-block;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.card__preview-btn:hover,
+.card__preview-btn:focus,
+.card__preview-btn:active {
+    border: 2px solid #7e838b;
+}
+
+.card__preview {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 3px;
+    display: inline-block;
+}
+
+.card__info {
+    width: 40%;
+}
+
+.card__title {
+    font-size: 2.4em;
+    color: #fff;
+    margin: 0;
+}
+
+.card__subtitle {
+    display: inline-block;
+    font-size: 1.4em;
+    color: #7e838b;
+    margin: 10px 0;
+}
+
+.stars {
+    margin: 20px 0 30px 0;
+    padding: 0;
+}
+
+.star {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/staract.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+[data-stars="0"] .star:nth-child(n+1),
+[data-stars="1"] .star:nth-child(n+2),
+[data-stars="2"] .star:nth-child(n+3),
+[data-stars="3"] .star:nth-child(n+4),
+[data-stars="4"] .star:nth-child(n+5) {
+    background-image: url(../img/star.png);
+}
+
+.card__select {
+    padding: 10px 30px 10px 10px;
+    font-size: 1.4em;
+    color: #7e838b;
+    border: 1px solid #7e838b;
+    background: transparent;
+    min-width: 80px;
+    max-width: 150px;
+    transition: all .25s ease-in;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../img/arrow.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.card__btn {
+    height: 40px;
+    width: 190px;
+    font-size: 1.4em;
+    color: #fff;
+    background-color: #202835;
+    border: 1px solid #7e838b;
+    transition: all .25s ease-in;
+}
+
+.card__btn:hover,
+.card__btn:focus,
+.card__btn:active {
+    background-color: #181e29;
+}
+
+.card__select:focus,
+.card__select:active {
+    outline: none;
+    opacity: .7;
+}
+
+.bgc-red {
+    background-color: #ed3333;
+}
+
+.bgc-blue {
+    background-color: #29e3ea;
+}
+
+.bgc-darkblue {
+    background-color: #1f273f;
+}
